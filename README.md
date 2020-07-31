@@ -1,23 +1,20 @@
 Aplicacion web desarrollada con flask, conectada con MongoDB, se utilizo redis como base de datos y de igual forma  ejecutandose en Nginx.
 ## Instrucciones que se deben de llevar a cabo
 
-1. Entrar a la consola el comando que se va a escribir para compilar el contenedor es:
+
+1. Primero colocamos el comando siguiente para clonar el respositorio
 ```
-$sudo docker-compose up -d
+$ git clone https://github.com/liza1998/PracticaLiz.git
 ```
-2. Despues colocamos el comando siguiente para clonar el respositorio
-```
-$ git clone https://github.com/benit0Zr/flaskapp_container.git
-```
-3. Asi mismo se tiene que ocupar el comando para compilar el contenedor, como consiguiente se tiene que acceder a la carpeta donde este el archivo, luego ejecutar el siguiente comando.
+2. Asi mismo se tiene que ocupar el comando para compilar el contenedor, como consiguiente se tiene que acceder a la carpeta donde este el archivo, luego ejecutar el siguiente comando.
 ```
 $ sudo docker-compose up -d
 ```
-4. Para iniciar el contenedor debes de escribir el siguiente comando. 
+3. Para iniciar el contenedor debes de escribir el siguiente comando. 
 ```
 $ sudo docker-compose up
 ```
-5. Colocarte en tu navegador colocare en la barra la dirección localhost:8181 podras visualizar funcionando la aplicacion flask
+4. Colocarte en tu navegador colocare en la barra la dirección localhost:8181 podras visualizar funcionando la aplicacion flask
  
 ### Como ver los datos en mongoDB
 1. Ver que los contenedores se estén ejecutando correctamete
