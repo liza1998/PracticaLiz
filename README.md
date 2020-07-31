@@ -1,53 +1,54 @@
-Ejempo de una aplicacion web desarrollado con flask, conectada con mongoDB, redis como base de datos, ejecutandose en Nginx.
-## Instrucciones
+Aplicacion web desarrollada con flask, conectada con MongoDB, se utilizo redis como base de datos y de igual forma  ejecutandose en Nginx.
+## Instrucciones que se deben de llevar a cabo
 
-1. Clonar el respositorio
+1. Entrar a la consola el comando que se va a escribir para compilar el contenedor es:
+```
+$sudo docker-compose up -d
+```
+2. Despues colocamos el comando siguiente para clonar el respositorio
 ```
 $ git clone https://github.com/benit0Zr/flaskapp_container.git
 ```
-2. Compilar el contenedor, hay que entrar en la carpeta donde este el archivo, posteriormente ejecutar el siguiente comando
+3. Asi mismo se tiene que ocupar el comando para compilar el contenedor, como consiguiente se tiene que acceder a la carpeta donde este el archivo, luego ejecutar el siguiente comando.
 ```
 $ sudo docker-compose up -d
 ```
-3. Iniciar el contenedor 
+4. Para iniciar el contenedor debes de escribir el siguiente comando. 
 ```
 $ sudo docker-compose up
 ```
-4. Ingresar la siguiente dirección localhost:8181 en el navegador para ver la aplicacion flask funcionando
-1. Para detener los contenedores
-```
-$ sudo docker stop
-```
-### Visualizar los datos en mongoDB
-1. Verificar que los contenedores se estén ejecutando
+5. Colocarte en tu navegador colocare en la barra la dirección localhost:8181 podras visualizar funcionando la aplicacion flask
+ 
+### Como ver los datos en mongoDB
+1. Ver que los contenedores se estén ejecutando correctamete
 ```
 $ sudo docker ps
 ```
-2. Copiar el id del contenedor mongoDB y despues ejecutar el siguiente comando
+2. Verificar cual es el ID del contenedor mongoDB lo copias y despues  se ejecuta comando
 ```
 $ sudo docker exec -it <ID> bash
 ```
-3. Ejecutar mongo, para entrar a la consola interactiva
+3. Enseguida colocas mongo, para entrar a la consola
 
 ```
-Listar las bases de datos
+Ingresar el comando para listar las bases de datos
 $ show dbs
 
 ```
 ```
-Seleccionar una base
+Este comando es para seleccionar la base que se desea 
 $ use testdb
 ```
 ```
-Mostrar las colecciones
+Para mostrar las colecciones y visualizarlas
 $ show collections
 ```
 ```
-Ver los registros
+Se utiliza este comando para visuslizar los registros
 $ db.users.find().pretty()
 ```
 ```
-Salir de la consola
+Para salir de la consola de MongoDB 
 $ exit
 
 ```
